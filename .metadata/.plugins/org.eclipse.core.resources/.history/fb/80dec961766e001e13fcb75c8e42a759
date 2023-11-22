@@ -1,0 +1,7 @@
+package com.java8.logical;
+
+public class FirstRepeated {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,8 @@
+package com.java8.logical;
+
+public class FindEvenNo_List {
+	public static void main(String[] args) {
+		
+	}
+
+}

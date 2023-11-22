@@ -1,0 +1,9 @@
+package com.java8.logical;
+
+public class NumberStartingWithOne {
+
+}
+
+
+
+//Given a list of integers, find out all the numbers starting with 1 using Stream functions

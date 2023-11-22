@@ -1,0 +1,27 @@
+package com.exception;
+
+public class InvalidAgeException {
+
+	public InvalidAgeException() {
+		super();
+	} 
+	
+	public void checkAge(int age) {
+		if(age < 18) {
+			throw new ArithmeticException("Your not eligible for Vote");
+		}else {
+			System.out.println("Welcome for Vote");
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			InvalidAgeException ie = new InvalidAgeException();
+			int age = ie.checkAge(18);
+			System.out.println(age);
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.java8.logical;
+
+public class FindMaxElement {
+
+}
+
+//Given a list of integers, find the maximum value element present in it using Stream functions?

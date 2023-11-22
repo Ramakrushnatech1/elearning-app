@@ -1,0 +1,8 @@
+package com.java8.logical;
+
+public class EvenNo_List {
+	public static void main(String[] args) {
+		
+	}
+
+}

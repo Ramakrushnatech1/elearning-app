@@ -1,0 +1,30 @@
+package com.exception;
+
+import java.util.Scanner;
+
+public class InvalidAgeException {
+
+	public InvalidAgeException() {
+		super();
+	}
+
+	public static void checkAge(int age) {
+		if (age < 18) {
+			throw new ArithmeticException("Your not eligible for Vote");
+		} else {
+			System.out.println("Welcome for Vote");
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter your age :");
+			int age = sc.nextInt();
+			checkAge(20);
+		} catch (Exception e) {
+			System.out.println("Exception occrued " + e);
+		}
+	}
+
+}

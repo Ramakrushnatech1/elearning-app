@@ -1,0 +1,25 @@
+package com.intellect;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class UserMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number of user details");
+		Integer n = Integer.valueOf(sc.nextLine());
+		ArrayList<User> al = new ArrayList<User>(n);
+		for (int i = 0; i < n; i++) {
+			System.out.printf("Enter the user %d details\n", i + 1);
+			String[] in = sc.nextLine().split(",");
+			al.add(new User(in[0], in[1], in[2], in[3]));
+		}
+		System.out.println("Sorting by Name");
+		Collections.sort(al, new UserNameComparator());
+		System.out.println("Name Email Username password");
+		for (User u : al)
+			System.out.println(u);
+	}
+}

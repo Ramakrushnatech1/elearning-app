@@ -1,0 +1,18 @@
+package com.exception;
+
+public class InvalidAgeException extends Exception {
+
+	public InvalidAgeException(String message) {
+		super(message);
+	}
+
+	public void validate(int age) throws InvalidAgeException {
+		if (age < 18) {
+			throw new InvalidAgeException("Your Not eleigible for Vote");
+		} else if (age == 18) {
+			throw new InvalidAgeException("Sorry, You are eleigible for next year onwards ");
+		} else {
+			System.out.println("Welcome to Vote, now your eleigiblity");
+		}
+	}
+}

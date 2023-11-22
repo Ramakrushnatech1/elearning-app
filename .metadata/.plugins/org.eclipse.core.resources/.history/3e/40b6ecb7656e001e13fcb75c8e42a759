@@ -1,0 +1,10 @@
+package com.java8.logical;
+
+public class FirstNonRepeated {
+	 public static void main(String[] args) {
+		
+	}
+}
+
+
+//Given a String, find the first non-repeated character in it using Stream functions?

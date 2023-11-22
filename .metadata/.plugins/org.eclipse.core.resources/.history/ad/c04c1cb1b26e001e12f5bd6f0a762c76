@@ -1,0 +1,17 @@
+package com.intellect;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UserMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number of user details");
+		Integer n = Integer.valueOf(sc.nextLine());
+		ArrayList<User> al = new ArrayList<User>(n);
+		for (int i = 0; i < n; i++) {
+			System.out.println("Enter the user %d details\n", i + 1);
+		}
+	}
+}

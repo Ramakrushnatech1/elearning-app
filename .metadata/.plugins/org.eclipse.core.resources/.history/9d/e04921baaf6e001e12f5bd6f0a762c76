@@ -1,0 +1,7 @@
+package com.intellect;
+
+public class NumberComparator {
+ public static void main(String[] args) {
+	
+}
+}
